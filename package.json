@@ -1,0 +1,21 @@
+{
+    "name": "obsidian",
+    "displayName": "Obsidian",
+    "description": "My version of Son of Obsidian",
+    "version": "0.1.0",
+    "engines": {
+        "vscode": "^1.30.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Obsidian",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Obsidian-color-theme.json"
+            }
+        ]
+    }
+}
