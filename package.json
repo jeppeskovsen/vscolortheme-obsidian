@@ -3,6 +3,8 @@
     "displayName": "Obsidian",
     "description": "My version of Son of Obsidian",
     "version": "0.1.0",
+    "author": "Jeppe Skovsen",
+    "publisher": "jeppeskovsen",
     "engines": {
         "vscode": "^1.30.0"
     },

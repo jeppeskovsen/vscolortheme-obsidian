@@ -83,7 +83,7 @@
 				"variable.other"
 			],
 			"settings": {
-				"foreground": "#FFFFFF"
+				"foreground": "#E0E2E4"
 			}
 		},
 		{
@@ -126,7 +126,7 @@
 			"name": "Function name",
 			"scope": "entity.name.function",
 			"settings": {
-				"foreground": "#FFFFFF"
+				"foreground": "#E0E2E4"
 			}
 		},
 		{
@@ -134,7 +134,7 @@
 			"scope": "variable.parameter",
 			"settings": {
 				"fontStyle": "",
-				"foreground": "#FFFFFF"
+				"foreground": "#E0E2E4"
 			}
 		},
 		{
@@ -194,8 +194,7 @@
 			"name": "Embedded section",
 			"scope": "punctuation.section.embedded",
 			"settings": {
-				"foreground": "#D3D408",
-				"background": "#000000"
+				"foreground": "#93C763"
 			}
 		},
 		{
@@ -217,14 +216,14 @@
 			"name": "Round brace",
 			"scope": "meta.brace",
 			"settings": {
-				"foreground": "#FFFFFF"
+				"foreground": "#E0E2E4"
 			}
 		},
 		{
 			"name": "Curly brace",
 			"scope": "meta.brace.curly",
 			"settings": {
-				"foreground": "#FFFFFF"
+				"foreground": "#E0E2E4"
 			}
 		},
 		{
@@ -256,8 +255,18 @@
 			}
 		},
 		{
-			"name": "JavaScript: This Keyword",
-			"scope": ["variable.language.this"],
+			"name": "JavaScript: Object Literal Key",
+			"scope": ["meta.object-literal.key"],
+			"settings": {
+				"foreground": "#E8E2B7",
+			}
+		},
+		{
+			"name": "JavaScript: Keyword",
+			"scope": [
+				"variable.language.this",
+				"keyword.operator.expression.delete"
+			],
 			"settings": {
 				"foreground": "#93C763",
 			}
@@ -267,6 +276,13 @@
 			"scope": ["keyword.operator.new"],
 			"settings": {
 				"foreground": "#93C763",
+			}
+		},
+		{
+			"name": "JavaScript: JSON Keyword",
+			"scope": ["support.constant.json"],
+			"settings": {
+				"foreground": "#809BB5",
 			}
 		},
 		{
@@ -301,14 +317,42 @@
 			"name": "JavaScript: DOM Variable",
 			"scope": "support.variable.dom",
 			"settings": {
-				"foreground": "#FFFFFF"
+				"foreground": "#E0E2E4"
+			}
+		},
+		{
+			"name": "JavaScript: Punctuation Accessor",
+			"scope": ["punctuation.accessor.js"],
+			"settings": {
+				"foreground": "#E0E2E4"
+			}
+		},
+		{
+			"name": "JavaScript: Template String",
+			"scope": ["string.template"],
+			"settings": {
+				"foreground": "#EFC210"
+			}
+		},
+		{
+			"name": "JavaScript: Template String Punctuation",
+			"scope": ["meta.embedded.line.js", "meta.template.expression.js"],
+			"settings": {
+				"foreground": "#E0E2E4"
+			}
+		},
+		{
+			"name": "JavaScript: Template String Begin / End",
+			"scope": ["punctuation.definition.template-expression.begin", "punctuation.definition.template-expression.end"],
+			"settings": {
+				"foreground": "#93C763"
 			}
 		},
 		{
 			"name": "JavaScript: DOM Variable property",
 			"scope": "support.variable.property.dom.js",
 			"settings": {
-				"foreground": "#FFFFFF"
+				"foreground": "#E0E2E4"
 			}
 		},
 		{
@@ -336,7 +380,7 @@
 			"name": "JavaScript: Entity Name Function",
 			"scope": "variable.other.constant.js",
 			"settings": {
-				"foreground": "#FFF"
+				"foreground": "#E0E2E4"
 			}
 		},
 		{
@@ -349,7 +393,7 @@
 		},
 		{
 			"name": "JavaScript: Class",
-			"scope": "support.class.js",
+			"scope": ["support.class", "entity.name.type.class"],
 			"settings": {
 				"foreground": "#809BB5"
 			}
@@ -404,16 +448,6 @@
 			}
 		},
 		{
-			"name": "JavaScript: Function call 2",
-			"scope": [
-				"entity.name.function",
-				"meta.function-call"
-			],
-			"settings": {
-				"foreground": "#E8E2B7"
-			}
-		},
-		{
 			"name": "JavaScript: Function call 3",
 			"scope": [
 				"support.function",
@@ -431,6 +465,26 @@
 			],
 			"settings": {
 				"foreground": "#E8E2B7"
+			}
+		},
+		{
+			"name": "JavaScript: Keywords other",
+			"scope": [
+				"keyword.control.flow",
+				"keyword.control.export",
+				"keyword.operator.expression.typeof"
+			],
+			"settings": {
+				"foreground": "#93C763"
+			}
+		},
+		{
+			"name": "JavaScript: Escape",
+			"scope": [
+				"constant.character.escape",
+			],
+			"settings": {
+				"foreground": "#5F95FA"
 			}
 		},
 		{
@@ -476,7 +530,7 @@
 				"variable.object.property.ts"
 			],
 			"settings": {
-				"foreground": "#FFFFFF"
+				"foreground": "#E0E2E4"
 			}
 		},
 		{
@@ -488,7 +542,35 @@
 				"punctuation.terminator.statement.ts"
 			],
 			"settings": {
-				"foreground": "#FFFFFF"
+				"foreground": "#E0E2E4"
+			}
+		},
+		{
+			"name": "C#: Classes",
+			"scope": [
+				"entity.name.type.class.cs",
+				"storage.type.cs"
+			],
+			"settings": {
+				"foreground": "#809BB5"
+			}
+		},
+		{
+			"name": "C#: Interfaces",
+			"scope": [
+				"entity.name.type.interface.cs"
+			],
+			"settings": {
+				"foreground": "#8C8CB4"
+			}
+		},
+		{
+			"name": "PowerShell: Variables",
+			"scope": [
+				"variable.other.readwrite.powershell"
+			],
+			"settings": {
+				"foreground": "#8C8CB4"
 			}
 		},
 		{
@@ -518,7 +600,7 @@
 			"name": "CSS: Tag",
 			"scope": "entity.name.tag.css",
 			"settings": {
-				"foreground": "#B3B689"
+				"foreground": "#93C763"
 			}
 		},
 		{
@@ -561,6 +643,27 @@
 			"settings": {
 				"fontStyle": "",
 				"foreground": "#9CB4AA"
+			}
+		},
+		{
+			"name": "Sass Doc: Params",
+			"scope": "storage.type.class.sassdoc",
+			"settings": {
+				"foreground": "#99A38A"
+			}
+		},
+		{
+			"name": "Sass Doc: Type",
+			"scope": "entity.name.type.instance.sassdoc",
+			"settings": {
+				"foreground": "#809BB5"
+			}
+		},
+		{
+			"name": "Sass Doc: Variable",
+			"scope": "variable.other.sassdoc",
+			"settings": {
+				"foreground": "#C8C8C8"
 			}
 		},
 		{
@@ -631,7 +734,7 @@
 			"name": "Sass: Colors",
 			"scope": "constant.other.color.rgb-value.scss",
 			"settings": {
-				"foreground": "#ffffff"
+				"foreground": "#E0E2E4"
 			}
 		},
 		{
@@ -699,7 +802,7 @@
 				"meta.tag.no-content"
 			],
 			"settings": {
-				"foreground": "#FFFFFF"
+				"foreground": "#E0E2E4"
 			}
 		},
 		{
@@ -883,15 +986,30 @@
 			"settings": {
 				"foreground": "#72AACA"
 			}
+		},
+		{
+			"name": "GraphQL: Unquited Alias",
+			"scope": "string.unquoted.alias.graphql",
+			"settings": {
+				"foreground": "#E8E2B7"
+			}
 		}
 	],
 	"colors": {
 		"editor.background": "#22282A",
-		"editorCursor.foreground": "#E0E2E4",
 		"editor.foreground": "#81969A",
+		"editorGutter.background": "#212628",
+		"terminal.background": "#1F2426",
+		"editorLineNumber.foreground": "#3F6970",
+		"statusBar.background": "#007ACC",
+		"editorCursor.foreground": "#E0E2E4",
 		"editorWhitespace.foreground": "#BFBFBF",
 		"editor.lineHighlightBackground": "#293134",
-		"editor.selectionBackground": "#1E6473"
+		"editor.selectionBackground": "#1E6473",
+		"editorIndentGuide.background": "#2B3335",
+		"editorIndentGuide.activeBackground": "#3D4749",
+		"sideBar.background": "#252526",
+		"menu.background": "#1B1B1C"
 	},
-	"name": "Sons of Obsidian"
+	"name": "Obsidian"
 }
