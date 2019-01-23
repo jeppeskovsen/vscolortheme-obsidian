@@ -265,7 +265,9 @@
 			"name": "JavaScript: Keyword",
 			"scope": [
 				"variable.language.this",
-				"keyword.operator.expression.delete"
+				"keyword.operator.expression.delete",
+				"keyword.operator.expression.of",
+				"keyword.operator.expression.in"
 			],
 			"settings": {
 				"foreground": "#93C763",
