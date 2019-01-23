@@ -1,5 +1,7 @@
 # Obsidian
 
+Currently tested for HTML, CSS, SCSS, JavaScript, TypeScript, PowerShell and C#.
+
 ## Sample
 
 

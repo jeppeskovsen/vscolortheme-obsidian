@@ -546,6 +546,25 @@
 			}
 		},
 		{
+			"name": "TypeScript: Decorator",
+			"scope": [
+				"meta.decorator"
+			],
+			"settings": {
+				"foreground": "#ECC379"
+			}
+		},
+		{
+			"name": "TypeScript: Enums",
+			"scope": [
+				"entity.name.type.enum",
+				"meta.enum.declaration"
+			],
+			"settings": {
+				"foreground": "#ECC379"
+			}
+		},
+		{
 			"name": "C#: Classes",
 			"scope": [
 				"entity.name.type.class.cs",
@@ -562,6 +581,20 @@
 			],
 			"settings": {
 				"foreground": "#8C8CB4"
+			}
+		},
+		{
+			"name": "C#: Region",
+			"scope": [
+				"punctuation.separator.hash.cs",
+				"keyword.preprocessor.region.cs",
+				"keyword.preprocessor.endregion.cs",
+				"keyword.preprocessor.if",
+				"keyword.preprocessor.endif.cs",
+				"meta.preprocessor.cs"
+			],
+			"settings": {
+				"foreground": "#A082BD"
 			}
 		},
 		{

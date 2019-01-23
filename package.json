@@ -2,11 +2,15 @@
     "name": "obsidian",
     "displayName": "Obsidian",
     "description": "My version of Son of Obsidian",
-    "version": "0.1.0",
+    "version": "1.2.0",
     "author": "Jeppe Skovsen",
     "publisher": "jeppeskovsen",
     "engines": {
         "vscode": "^1.30.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jeppeskovsen/vscolortheme-obsidian"
     },
     "categories": [
         "Themes"
